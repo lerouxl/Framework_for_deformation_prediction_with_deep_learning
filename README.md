@@ -8,12 +8,28 @@ This project used pytorch and pytorch geometry.
 
 
 # Installation
-To install this scripts, you need to:
+To install this framework, you need to:
 1. Create a virtual environment or a conda env with Python 3.11
-2. Install Pytorch ~=2.0.1 with the corresponding CUDA version
-3. Install Pytorch geometric ~=2.3.1 with the corresponding CUDA version
-4. Install Pytorch lightning ~=2.0.5
+2. Install [Pytorch ~=2.0.1 with the corresponding CUDA version](https://pytorch.org/get-started/locally/)
+3. Install [Pytorch geometric ~=2.3.1 with the corresponding CUDA version](https://pytorch-geometric.readthedocs.io/en/latest/install/installation.html)
 5. Install `requirement.txt`
+
+Creating a conda env
+```bash
+conda create -n deformation_with_DL python=3.11
+conda activate deformation_with_DL
+```
+Or using a virtual environment with Python3.11
+```bash
+python -m venv ./venv
+venv/Scripts/activate.bat
+```
+Install Pytorch and Pytorch geometric compatible with your CUDA version.
+Install requirements.txt
+
+```bash
+python -m pip install requirements.txt
+```
 
 # Use
 To generate a dataset and train an AI on it:
